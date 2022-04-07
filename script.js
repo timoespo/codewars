@@ -6,3 +6,12 @@ function makeNegative(num) {
 //test cases
 makeNegative(42)
 makeNegative(-42)
+
+
+// April 6th: Very simple, given an integer or a floating-point number, find its opposite.
+function opposite(number) {
+    return (number > 0) ? -Math.abs(number) : Math.abs(number)
+}
+//test cases 
+opposite(1)
+opposite(-1)
