@@ -22,3 +22,20 @@ function numberToString(num) {
 }
 //test cases
 numberToString(67)
+
+//April 7th: Complete the solution so that it reverses the string passed into it.
+function solution(str) {
+    let o = ''
+    for (let i = str.length -1; i>= 0; i--)
+        o += str[i]
+    return o
+
+//Elegant solution I found:
+function solution(str){
+    return str.split('').reverse().join('')
+}
+
+}
+//test cases
+solution("world")
+solution("hello")
