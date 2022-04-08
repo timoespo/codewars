@@ -30,7 +30,7 @@ function solution(str) {
         o += str[i]
     return o
 
-//Elegant solution I found:
+//Solution I need to remember!
 function solution(str){
     return str.split('').reverse().join('')
 }
@@ -39,3 +39,37 @@ function solution(str){
 //test cases
 solution("world")
 solution("hello")
+
+
+//April 8th: Simple, remove the spaces from the string, then return the resultant string.
+function noSpace(x) {
+    return x.split(' ').join('')
+}
+//test cases
+noSpace('8 j 8 mBliB9 g imJ Bbb99 B')
+noSpace('aa bbbb cccccc ddddd')
+
+
+//April 8th: Grasshopper Summation - Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+var summation = function(num) {
+    sum = 0
+    for (let i = 0 ; i <= num ; i++) {
+        sum += i
+    } return sum
+}
+
+//test cases 
+summation(8) //36
+
+
+//April 8th: Square(n) Sum
+function squareSum(numbers){
+    let total = 0
+    for (let i = 0 ; i < numbers.length ; i++) {
+        total += Math.pow(numbers[i], 2)
+    } return total
+}
+//test cases
+squareSum([1,2]) // 5
+squareSum([0,3,4,5])// 50
