@@ -14,4 +14,11 @@ function opposite(number) {
 }
 //test cases 
 opposite(1)
-opposite(-1)
+opposite(-1)  
+
+//April 7th: We need a function that can transform a number into a string.
+function numberToString(num) {
+    return num.toString()
+}
+//test cases
+numberToString(67)
