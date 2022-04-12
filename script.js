@@ -73,3 +73,16 @@ function squareSum(numbers){
 //test cases
 squareSum([1,2]) // 5
 squareSum([0,3,4,5])// 50
+
+
+//April 12th: Given an array of integers your solution should find the smallest integer.
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        let minInteger = Math.min(...args) //first time using the spread operator
+        return minInteger   
+    }
+}
+
+//test cases 
+findSmallestInt([78,56,232,12,8]) // 8
+findSmallestInt([1,56,232,12,8]) // 1
