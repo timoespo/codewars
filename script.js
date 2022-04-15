@@ -155,3 +155,16 @@ function digitize(n) {
 
 //test cases
 digitize(35231) // [1,3,2,5,3]
+
+
+//April 14th: Convert a string into a number
+function stringToNumber(str) {
+    let num = Number(str) 
+    return num;
+}
+
+//test cases 
+stringToNumber("1234")// 1234
+stringToNumber("605")//605
+
+//Looking at other solutions, using parseInt is much better way to solve this
