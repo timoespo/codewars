@@ -168,3 +168,8 @@ stringToNumber("1234")// 1234
 stringToNumber("605")//605
 
 //Looking at other solutions, using parseInt is much better way to solve this
+
+//April 14th: Given an array of integers, return a new array with each value doubled.
+function maps(x) {
+    return treasureMap = x.map( n => n * 2)
+}
