@@ -228,3 +228,14 @@ function getAverage(marks) {
 //test cases
 getAverage([2,2,2,2]) // 2
 getAverage([1,2,3,4,5]) // 3
+
+//April 16th: Build a function that returns an array of integers from n to 1 where n>0.
+function reverseSeq(n) {
+    let arr = []
+    for (let i = n ; i > 0 ; i--){
+        arr.push(i)
+    } return arr
+}
+
+//test cases 
+reverseSeq(5) // [5,4,3,2,1]
