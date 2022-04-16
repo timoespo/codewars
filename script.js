@@ -188,3 +188,14 @@ function past( h, m, s) {
 //test cases 
 past(0, 1, 1) // 61000
 past(1, 1, 1) // 3661000
+
+//April 15th: Needle in a haystack - write a function that finds 'needle' in an array
+function findNeedle(haystack) {
+    for (let i = 0 ; i < haystack.length ; i++) {
+        if (haystack[i] === 'needle') {
+            return `found the needle at position ${i}`
+        }
+    }
+}
+
+
