@@ -208,3 +208,11 @@ function check(a, x) {
 check([66,101,42], 42) // true
 check([a, b, c, d] , e)// false
 
+//April 16th: Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+function greet(name) {
+    return (name === 'Johnny') ? 'Hello, my love!' : `Hello, ${name}!`
+}
+
+//test cases 
+greet('Johnny') // 'Hello, my love!
+greet('Jimmy')// 'Hello, Jimmy!
