@@ -295,3 +295,13 @@ function lovefunc(flower1, flower2) {
 //test cases
 lovefunc(1,4) // true
 lovefunc(2,2) //false
+
+
+//April 17th: Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+function removeExclamationMarks(s) {
+    let newStr = s.replace(/!/g, '')
+    return newStr
+ }
+
+//test cases 
+RemoveExclamationMarks("Hello World!") // Hello World
