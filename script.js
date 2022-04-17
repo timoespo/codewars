@@ -247,3 +247,12 @@ function paperwork(n ,m) {
 // test cases 
 paperwork(5,5) // 25
 paperwork(-5,5) //0 
+
+//April 17th: Sum two arrays 
+function arrayPlusArray(arr1, arr2) {
+    let total = 0
+    for (let i = 0 ; i < arr1.length ; i++) {
+        total += arr1[i] + arr2[i]
+    }
+    return total;
+}
