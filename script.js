@@ -481,3 +481,17 @@ function filterList(l) {
 //test cases 
 filterList([1,2,'a','b',3]) // [1,2,3]
 filterList([1,2,'aasf',123,'b'])// [1,2,123]
+
+
+//April 27th: Exes and Ohs - Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+//using regex
+function XO(str) {
+    let x = str.match(/x/gi)
+    let o = str.match(/o/gi)
+    return (x && x.length) === (o && o.length)
+}
+//solution not using regex
+const XO = str => {
+    str = str.toLowerCase().split('');
+    return str.filter(x => x === 'x').length === str.filter(x=> x === 'o').length
+}
