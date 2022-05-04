@@ -509,3 +509,13 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
 shark(12,50,4,8,true) //"Alive"
 shark(7,55,4,16,true) //"Alive"
 shark(24,0,4,8,true) //"SharkBait"
+
+
+//May 3rd: Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+function sum(numbers) {
+    return numbers.reduce((partialSum, a) => partialSum + a, 0)
+}
+
+//test cases
+sum([]) // 0
+sum([1,5.2,4,0,-1]) // 9.2
