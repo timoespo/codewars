@@ -602,3 +602,13 @@ function points(games) {
         }
     } return total
 }
+
+
+//May 6th: If you can't sleep, just count sheep!!
+let countSheep = function(num) {
+    let result = '';
+    for (let i = 0; i <= num ; i++) {
+        result = result + i + 'sheep...'
+    }
+    return result
+}
