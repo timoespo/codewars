@@ -631,11 +631,26 @@ function smash(words) {
 smash([]) // ""
 smash(['this', 'is', 'a', 'really', 'long', 'sentence']) //'this is a really long sentence'
 
-//May 8th: Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers. Return your answer as a number.
+//May 9th: Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers. Return your answer as a number.
 function sumMix(x) {
-    return x.reduce((x,y) => Number(x) + Number(y))
+    return x.reduce((x,y) => Number(x) + Number(y), 0)
+}
+
+//using map()
+function sumMix(x) {
+    return x.map(a => +a).reduce((a,b) => a + b);
 }
 
 //test cases 
 sumMix([9,3,'7','3'])// 22
 sumMix(['5','0',9,3,2,1,'9',6,7]) //42
+
+
+//May 9th: Your task is to create the functionisDivideBy (or is_divide_by) to check if an integer number is divisible by both integers a and b.
+function isDivideBy(number, a, b) {
+    return (number % a === 0 && number % b === 0)
+}
+
+//test cases 
+isDivideBy(-12, 2, -6) // true
+isDivideBy(45, 2, -5)// false
