@@ -25,5 +25,3 @@ var add = function (n) {
   f.valueOf = () => n
   return f
 }
-
-console.log(add(1)(2)(3))
