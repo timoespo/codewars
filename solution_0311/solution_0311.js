@@ -13,3 +13,20 @@
 // n = 1: [1]
 // n = 2: [1,  1, 1]
 // n = 4: [1,  1, 1,  1, 2, 1,  1, 3, 3, 1]
+
+function pascalsTriangle(n) {
+  let pascal = []
+  let index = 0
+
+  for (let i = 0; i < n; i++) {
+    index = pascal.length - i
+    for (let j = 0; j < i + 1; j++) {
+      if (j === 0 || j === i) {
+        pascal.push(1)
+      } else {
+        pascal.push(pascal[index + j] + pascal[index + j - 1])
+      }
+    }
+  }
+  return pascal
+}
