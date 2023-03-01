@@ -18,6 +18,6 @@
 
 function abbreviate(string) {
   return string.replace(/\w{4,}/g, (w) => {
-    return w[0] + (w.length - 2) + w[w.length - 1]
+    w[0] + (w.length - 2) + w[w.length - 1]
   })
 }
